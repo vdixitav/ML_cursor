@@ -216,3 +216,8 @@ System ko illegal jumps rokne hain
 ┌────────────────────────────┐
 │ ML TOOLS / AGENTS          │
 └────────────────────────────┘
+
+
+
+core/artifacts.py likhenge — ye file trust + audit + production-readiness ka base hai.
+Iske bina agents “guessy” lagte hain; iske saath verifiable hote hain.
