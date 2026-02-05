@@ -170,3 +170,17 @@ No external calls
 ML-only allowlist
 
 Deterministic metrics
+
+
+## Task Specification
+
+The system does not infer ML tasks implicitly.
+Each run requires an explicit task configuration that defines:
+- task type (regression / classification / forecasting)
+- target column
+- feature inclusion/exclusion
+- evaluation metrics
+- allowed models
+
+This ensures correctness, auditability, and safe reuse of datasets
+across multiple ML objectives.
