@@ -10,6 +10,3 @@ import pickle
 # Base directory where all artifacts are stored
 ARTIFACTS_DIR=Path("output")
 ARTIFACTS_DIR.mkdir(exist_ok=True)
-
-
-print(".... for reveret.....")
