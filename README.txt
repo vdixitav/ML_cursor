@@ -184,3 +184,35 @@ Each run requires an explicit task configuration that defines:
 
 This ensures correctness, auditability, and safe reuse of datasets
 across multiple ML objectives.
+
+
+
+
+
+
+ACTUAL PROJECT FLOW Started
+
+Why core/state.py is FIRST
+
+LangGraph ko states chahiye
+
+Agents ko order chahiye
+
+System ko illegal jumps rokne hain
+
+┌────────────────────────────┐
+│ LangChain Guardrails       │  ← soft, behavioral
+│  - prompt constraints     │
+│  - tool schemas           │
+│  - retries                │
+└──────────────┬─────────────┘
+               ↓
+┌────────────────────────────┐
+│ OUR POLICY LAYER (core)    │  ← HARD, non-negotiable
+│  - allowlist actions      │
+│  - raise exceptions       │
+└──────────────┬─────────────┘
+               ↓
+┌────────────────────────────┐
+│ ML TOOLS / AGENTS          │
+└────────────────────────────┘
