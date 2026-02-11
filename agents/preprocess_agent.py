@@ -143,7 +143,8 @@ class PreprocessAgent:
         )
 
         return {
-            "rows_before": int(df.shape[0]),
-            "rows_after": int(df_clean.shape[0]),
-            "report": preprocessing_report,
-        }
+            "processed_data": df_clean,   # <-- THIS IS MISSING
+        "rows_before": int(df.shape[0]),
+        "rows_after": int(df_clean.shape[0]),
+        "report": preprocessing_report,
+}
