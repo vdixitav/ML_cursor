@@ -2,7 +2,7 @@ from ML_cursor.graph.state import GraphState
 from ML_cursor.agents.eda_agent import EDAAgent
 
 
-def dea_node(state: GraphState) -> GraphState:
+def eda_node(state: GraphState) -> GraphState:
     """
     Langgraph node wrappe for EDA agent
 
